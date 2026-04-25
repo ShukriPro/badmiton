@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "predeploy": "bun run build",
+    "public": "dist",
+    "site": "ipu-badminton",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
